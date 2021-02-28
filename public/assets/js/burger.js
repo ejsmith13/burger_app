@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             // Check that the response is all good
             // Reload the page so the user can see the new quote
             if (response.ok) {
-              console.log(`changed devourered to: ${eaten}`);
+              console.log(`changed devourered to: ${changeEaten}`);
               location.reload("/");
             } else {
               alert("something went wrong!");
