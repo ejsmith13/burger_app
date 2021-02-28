@@ -1,0 +1,44 @@
+body {
+  background-color: gold;
+}
+
+form {
+  text-align: center;
+  border: red 1px solid;
+}
+h1,
+h2 {
+  text-align: center;
+  border-bottom: black 2px solid;
+  margin-bottom: 5%;
+  font-weight: bold;
+}
+
+img{
+    display: block;
+    margin:5% auto;
+}
+
+li {
+  font-size: large;
+  margin-bottom: 5px;
+}
+
+.col-md-6 {
+  border: red 1px solid;
+}
+
+.devoured-btn {
+  padding: 2px;
+}
+
+#submitBtn {
+  margin-top: 10px;
+  
+}
+
+#burgerPic {
+  width: 30%;
+  margin: 20px, 200px;
+  border: red 1px solid;
+}

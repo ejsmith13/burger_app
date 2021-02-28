@@ -1,48 +1,56 @@
-<h1>Burger Log!</h1>
+<div class="container">
 
-<h2>Burger Wish List</h2>
+    <h1>Burger Log!</h1>
+    <img id="burgerPic"
+        src="https://media1.s-nbcnews.com/j/newscms/2019_21/2870431/190524-classic-american-cheeseburger-ew-207p_d9270c5c545b30ea094084c7f2342eb4.fit-2000w.jpg"
+        alt="hamburger" />
 
-<ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    <li>
-        {{ id }}: {{ burger_name}}
+    <section class="row">
+        <div class="col-md-6">
+            <h2>Burger Wish List</h2>
 
-        <button class="devoured-btn" data-id="{{id}}" data-eaten="{{devoured}}">
-            {{#if devoured}}{{else}}Devour It!{{/if}}
-        </button>
+            <ul>
+                {{#each burgers}}
+                {{#unless devoured}}
+                <li>
+                    {{ id }}: {{ burger_name}}
+
+                    <button class="devoured-btn btn btn-primary" data-id="{{id}}" data-eaten="{{devoured}}">
+                        Devour It!
+                    </button>
 
 
-    </li>
-    {{/unless}}
-    {{/each}}
-</ul>
+                </li>
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
 
-<h2>Burgers eaten!</h2>
+        <div class="col-md-6">
+            <h2>Burgers eaten!</h2>
 
-<ul>
-    {{#each burgers}}
-    {{#if devoured}}
-    <li>
-        {{burger_name}}
-    </li>
-    {{/if}}
-    {{/each}}
-</ul>
+            <ul>
+                {{#each burgers}}
+                {{#if devoured}}
+                <li>
+                    {{burger_name}}
+                </li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
 
-<h2>Add a Burger</h2>
-<form id="create-form">
+    </section>
 
-    <div class="form-group">
-        <label for="burger">Burger Name:</label>
-        <input type="text" id="burger" name="name">
-    </div>
 
-    {{!-- <div class="form-group">
-        <label for="sleepy">Sleepy?</label><br>
-        <input type="radio" name="sleepy" value="1" id="sleepy" checked> Sleepy!<br>
-        <input type="radio" name="sleepy" value="0" id="awake"> Awake
-    </div> --}}
+    <h2>Add a Burger</h2>
+    <form id="create-form">
 
-    <button type="submit">Add a Burger</button>
-</form>
+        <div class="form-group">
+            <label for="burger">Burger Name:</label>
+            <input type="text" id="burger" name="name">
+        </div>
+        <button class=" btn btn-primary" type="submit" id="submitBtn">Add a Burger</button>
+    </form>
+
+</div>
