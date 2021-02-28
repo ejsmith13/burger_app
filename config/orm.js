@@ -22,15 +22,16 @@ const orm = {
         })
     },
     insertOne(table, cols, vals, cb){
-        let querystring = `INSERT INTO ${table}`;
-        querystring += ' (';
-        querystring += cols.tostring();
-        querystring += ') ';
-        querystring += 'VALUES (';
-        querystring += questionMarks(val.length);
-        querystring += ') ';
+        console.log(`vals: ${vals}`)
+        let queryString = `INSERT INTO ${table}`;
+        queryString += ' (';
+        queryString += cols;
+        queryString += ') ';
+        queryString += 'VALUES (';
+        queryString += questionMarks(vals.length);
+        queryString += '); ';
 
-        console.log(querystring);
+        console.log(queryString);
 
         connection.query(queryString, vals, (err, result) => {
             if (err) {

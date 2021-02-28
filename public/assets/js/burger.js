@@ -13,10 +13,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
           // Grabs the id of the element that goes by the name, "id"
           const id = e.target.getAttribute("data-id");
           const eaten = e.target.getAttribute("data-eaten");
+          console.log(id);
+          console.log(eaten);
   
           const changeEaten = {
             devoured: eaten,
           };
+
+          console.log(changeEaten)
   
           fetch(`/api/burgers/${id}`, {
             method: "PUT",
@@ -50,9 +54,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
   
         // Grabs the value of the textarea that goes by the name, "quote"
         const newBurger = {
-          name: document.getElementById("burger").value.trim(),
+          burger_name: document.getElementById("burger").value.trim(),
           
         };
+
+        console.log(newBurger)
   
         // Send POST request to create a new quote
         fetch("/api/burgers", {
