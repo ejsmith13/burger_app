@@ -11,8 +11,8 @@ const questionMarks = (num) => {
     return arr.toString();
   };
 
-const omr = {
-    selectAl(tableInput, cb){
+const orm = {
+    selectAll(tableInput, cb){
         const queryString= `SELECT * FROM ${tableInput};`;
         connection.query(queryString, (err, result) => {
             if (err) {
