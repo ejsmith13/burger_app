@@ -1,13 +1,17 @@
 <div class="container">
 
     <h1>Burger Log!</h1>
+    <p>
+        Add your favorte burgers below to add them to the burger wish list. Click the Devour It button to take your
+        burger from the wish list and move it to the log of burgers you've eaten.
+    </p>
     <img id="burgerPic"
         src="https://media1.s-nbcnews.com/j/newscms/2019_21/2870431/190524-classic-american-cheeseburger-ew-207p_d9270c5c545b30ea094084c7f2342eb4.fit-2000w.jpg"
         alt="hamburger" />
 
     <section class="row">
         <div class="col-md-6">
-            <h2>Burger Wish List</h2>
+            <h2>Burger Wish List:</h2>
 
             <ul>
                 {{#each burgers}}
@@ -27,7 +31,7 @@
         </div>
 
         <div class="col-md-6">
-            <h2>Burgers eaten!</h2>
+            <h2>Burgers eaten:</h2>
 
             <ul>
                 {{#each burgers}}
@@ -43,14 +47,15 @@
     </section>
 
 
-    <h2>Add a Burger</h2>
+    <h2 id= "addSection">Add a Burger</h2>
     <form id="create-form">
 
         <div class="form-group">
             <label for="burger">Burger Name:</label>
             <input type="text" id="burger" name="name">
+
+            <button class=" btn btn-primary" type="submit" id="submitBtn">Add a Burger</button>
         </div>
-        <button class=" btn btn-primary" type="submit" id="submitBtn">Add a Burger</button>
     </form>
 
 </div>

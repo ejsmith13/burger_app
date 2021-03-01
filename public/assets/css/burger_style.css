@@ -4,7 +4,6 @@ body {
 
 form {
   text-align: center;
-  border: red 1px solid;
 }
 h1,
 h2 {
@@ -14,18 +13,25 @@ h2 {
   font-weight: bold;
 }
 
-img{
-    display: block;
-    margin:5% auto;
+h1 {
+  margin-bottom: 1%;
 }
 
+img {
+  display: block;
+  margin: 5% auto;
+}
+label {
+  font-weight: bold;
+}
 li {
   font-size: large;
   margin-bottom: 5px;
 }
 
-.col-md-6 {
-  border: red 1px solid;
+p {
+  text-align: center;
+  font-size: large;
 }
 
 .devoured-btn {
@@ -33,12 +39,14 @@ li {
 }
 
 #submitBtn {
-  margin-top: 10px;
-  
+  padding: 2px;
+}
+
+#addSection {
+  margin-bottom: 1%;
 }
 
 #burgerPic {
   width: 30%;
   margin: 20px, 200px;
-  border: red 1px solid;
 }
