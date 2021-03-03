@@ -34,7 +34,9 @@
 --------------------------------------
 
   ## Screenshots:
+  [Deployed App](https://glacial-coast-49781.herokuapp.com/)
 
+  [screenshot of app](/public/assets/images/screenshot_burger.png)
 
   
 
