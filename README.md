@@ -27,7 +27,7 @@
   ## Description:
 
 
-  This is a simple full stack application that logs different types of burgers the user would like to eat, and also allows the user to move them over to a seperate column once they have finished them. It uses a database on the back end to store the information for the user and dynamically creates new burgers on the page when the user enters them in the form.
+  This is a simple full stack application that logs different types of burgers the user would like to eat, and also allows the user to move them over to a seperate column once they have finished them. It uses a database on the back end to store the information for the user and dynamically creates new burgers on the page when the user enters them in the form. This app is deployed on Heroku and can be accessed through the link below. 
 
 
   
